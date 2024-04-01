@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px; 
+}
+
+.logo img {
+    width: 25%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #DB3910;
+}
+
+.hire-me button {
+    background-color: #DB3910;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.hire-me button:hover {
+    background-color: #f2f2f2;
+    color: #DB3910;
+}
+
+.sen-text {
+    font-family: "Sen", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+}
