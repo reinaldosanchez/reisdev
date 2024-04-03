@@ -13,11 +13,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 60px; 
+    padding: 0 60px; 
 }
 
 .logo img {
-    width: 25%;
+    width: 20%;
 }
 
 nav ul {
@@ -28,17 +28,20 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    float: left;
+    
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+    margin-right: 1rem;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     color: #000;
     transition: color 0.3s ease;
+    padding: 14px 16px;
 }
 
 nav ul li a:hover {
