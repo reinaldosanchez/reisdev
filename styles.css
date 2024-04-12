@@ -5,6 +5,7 @@
     font-weight: 400;
     padding: none;
     margin: none;
+    /* border: red 1px solid; */
 }
 body {
     background-color: #2C2C2C;
@@ -17,11 +18,69 @@ header {
 }
 
 .jumbotron {
+    
     background-color: #f2f2f2;
-    padding: 10px 20px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
+.jumbotron__profilepic {
+    position: absolute;
+    height: 450px;
+    top: 25px;
+    left: 200px;
+    box-shadow: 1px 1px 10px black;
+}
+.jumbotron__blackbox {
+    width: 600px;       
+    height: 500px;         
+    background: #3A393B;
+}
 
+.jumbotron__h2{
+    z-index: 10;
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 60pt;
+    position: absolute;
+    left: 700px;
+    top: 50px;
+}
+
+.jumbotron__h1{
+    z-index: 10;
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 80pt;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+}
+
+.jumbotron__h3{
+    z-index: 10;
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 65pt;
+    position: absolute;
+    left: 700px;
+    top: 220px;
+    opacity: 0.5;
+}
+.jumbotron__p{
+    z-index: 10;
+    font-family: "Sen";
+    font-weight: 400;
+    font-size: 12pt;
+    position: absolute;
+    left: 700px;
+    top: 380px;
+    max-width: 800px;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -35,9 +94,10 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 0 auto;
     display: flex;
+    max-width: 1024px;
 }
 
 nav ul li {
