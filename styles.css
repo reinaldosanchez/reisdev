@@ -5,7 +5,7 @@
     font-weight: 400;
     padding: none;
     margin: none;
-    /* border: red 1px solid; */
+    /*border: red 1px solid;*/
 }
 body {
     background-color: #2C2C2C;
@@ -21,7 +21,7 @@ header {
     
     background-color: #f2f2f2;
     height: 500px;
-    display: flex;
+    display: flexbox;
     position: relative;
     flex-direction: column;
     align-items: flex-start;
@@ -81,15 +81,17 @@ header {
     top: 380px;
     max-width: 800px;
 }
-.container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px; 
 }
 
-.logo img {
-    width: 20%;
+.header__container__logo img {
+    width: 90px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul {
@@ -101,12 +103,12 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
+    align-items: center;
     
 }
 
 nav ul li:last-child {
-    margin-right: 1rem;
+    margin-right: 1rem
 }
 
 nav ul li a {
@@ -115,6 +117,10 @@ nav ul li a {
     color: #000;
     transition: color 0.3s ease;
     padding: 14px 16px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+    font-size: 16pt;
 }
 
 nav ul li a:hover {
@@ -129,6 +135,10 @@ nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.4s ease, color 0.3s ease;
     border-radius: 5px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+    font-size: 16pt;
 }
 
 .hire-me button:hover {
@@ -136,10 +146,128 @@ nav ul li a:hover {
     color: #DB3910;
 }
 
-.sen-text {
-    font-family: 'Sen', sans-serif;
-    font-weight: 600; 
-    font-style: normal;
+.workexp {
+    background-color: #3A393B;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+.workexp__div{
+    margin: 0px 100px;
+    max-height: 700px;
+}
+.workexp__div__h4 {
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 10pt;
+    text-align: left;
+    color: #8491A0;
+    padding: 0;
+}.workexp__div__h4__p {
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 35pt;
+    text-align: left;
+    color: #f2f2f2;
+    max-width: 600px;
+    padding: 0;
+}
+.workexp__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 150px 0px 150px;
+}
+.workexp__container table {
+    border: 0;
+    max-width: 350px;
+}
+.workexp__container__th {
+    font-family: "Sen";
+    font-size: 80pt;
+    text-align: left;
+    color: #8491A0;
+    max-width: 600px;
+}
+.workexp__container__td1 {
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: left;
+    color: #f2f2f2;
+    max-width: 600px;
+    padding: 5px;
+    margin:0;
+}
+.workexp__container__td1 span {
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: left;
+    color: #f2f2f2;
+    max-width: 600px;
+    padding: 5px;
+    color:#DB3910;
+    margin:0;
+}
+.workexp__container__td2 {
+    font-family: "Sen";
+    font-weight: 400;
+    font-size: 12pt;
+    text-align: justify;
+    color:#f2f2f2;
+}
+.philosophy {
+    background-image: url(/assets/IMG_3951.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.philosophy__h1 {
+    font-family: "Sen";
+    font-weight: 600;
+    font-size: 55pt;
+    color: #f2f2f2;
+    margin: 0 100px 0px 100px;
+    transform:translateY(235px)
+
+}
+.philosophy__p {
+    font-family: "Sen";
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: justify;
+    color: #f2f2f2;
+    max-width: 800px;
+    margin: 0 100px 0px 100px;
+    transform: translateY(240px);
+
+}
+.skillset {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #3A393B;
+}
+.skillset__text {
+    font-family: "Sen";
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: left;
+}
+.skillset__text h3 {
+    font-size: 64px;
+    font-weight: 600;
+    color:#f2f2f2;
+}
+.skillset__text p {
+    font-size: 19px;
+    color:#f2f2f2;
+    text-align: justify;
 }
 
 @font-face {
