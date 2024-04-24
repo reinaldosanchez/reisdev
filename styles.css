@@ -1,278 +1,60 @@
-*{
-    list-style: none;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: none;
-    margin: none;
-    /*border: red 1px solid;*/
-}
+/* Estilos generales */
 body {
-    background-color: #2C2C2C;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #f2f2f2;
-    padding: 10px 20px;
-    justify-content: space-between;
-}
-
-.jumbotron {
-    
-    background-color: #f2f2f2;
-    height: 500px;
-    display: flexbox;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.jumbotron__profilepic {
-    position: absolute;
-    height: 450px;
-    top: 25px;
-    left: 200px;
-    box-shadow: 1px 1px 10px black;
-}
-.jumbotron__blackbox {
-    width: 600px;       
-    height: 500px;         
-    background: #3A393B;
-}
-
-.jumbotron__h2{
-    z-index: 10;
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 60pt;
-    position: absolute;
-    left: 700px;
-    top: 50px;
-}
-
-.jumbotron__h1{
-    z-index: 10;
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 80pt;
-    position: absolute;
-    left: 700px;
-    top: 100px;
-}
-
-.jumbotron__h3{
-    z-index: 10;
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 65pt;
-    position: absolute;
-    left: 700px;
-    top: 220px;
-    opacity: 0.5;
-}
-.jumbotron__p{
-    z-index: 10;
-    font-family: "Sen";
-    font-weight: 400;
-    font-size: 12pt;
-    position: absolute;
-    left: 700px;
-    top: 380px;
-    max-width: 800px;
-}
-.header__container {
+/* Navegación */
+.nav {
     display: flex;
     justify-content: space-between;
+}
+
+/* Sección de introducción */
+.intro {
+    display: flex;
     align-items: center;
-    padding: 0 60px; 
-}
-
-.header__container__logo img {
-    width: 90px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0 auto;
-    display: flex;
-    max-width: 1024px;
-}
-
-nav ul li {
-    align-items: center;
-    
-}
-
-nav ul li:last-child {
-    margin-right: 1rem
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    transition: color 0.3s ease;
-    padding: 14px 16px;
-    font-family: 'Sen', sans-serif;
-    font-weight: 600; 
-    font-style: normal;
-    font-size: 16pt;
-}
-
-nav ul li a:hover {
-    color: #DB3910;
-}
-
-.hire-me button {
-    background-color: #DB3910;
-    color: #f2f2f2;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.4s ease, color 0.3s ease;
-    border-radius: 5px;
-    font-family: 'Sen', sans-serif;
-    font-weight: 600; 
-    font-style: normal;
-    font-size: 16pt;
-}
-
-.hire-me button:hover {
-    background-color: #f2f2f2;
-    color: #DB3910;
-}
-
-.workexp {
-    background-color: #3A393B;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-
-}
-.workexp__div{
-    margin: 0px 100px;
-    max-height: 700px;
-}
-.workexp__div__h4 {
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 10pt;
-    text-align: left;
-    color: #8491A0;
-    padding: 0;
-}.workexp__div__h4__p {
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 35pt;
-    text-align: left;
-    color: #f2f2f2;
-    max-width: 600px;
-    padding: 0;
-}
-.workexp__container {
-    display: flex;
     justify-content: space-between;
-    margin: 0 150px 0px 150px;
 }
-.workexp__container table {
-    border: 0;
-    max-width: 350px;
+
+/* Sección de empresas */
+.companies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-.workexp__container__th {
-    font-family: "Sen";
-    font-size: 80pt;
-    text-align: left;
-    color: #8491A0;
-    max-width: 600px;
-}
-.workexp__container__td1 {
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 14pt;
-    text-align: left;
-    color: #f2f2f2;
-    max-width: 600px;
-    padding: 5px;
-    margin:0;
-}
-.workexp__container__td1 span {
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 14pt;
-    text-align: left;
-    color: #f2f2f2;
-    max-width: 600px;
-    padding: 5px;
-    color:#DB3910;
-    margin:0;
-}
-.workexp__container__td2 {
-    font-family: "Sen";
-    font-weight: 400;
-    font-size: 12pt;
-    text-align: justify;
-    color:#f2f2f2;
-}
+
+/* Sección de filosofía y valores */
 .philosophy {
-    background-image: url(/assets/IMG_3951.jpg);
+    background-image: url('ruta/a/tu/imagen.jpg');
     background-size: cover;
-    background-position: center;
-    height: 600px;
+    color: white;
+}
+
+/* Sección de habilidades */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Sección de trabajos */
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Sección de fotografía */
+.photography {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Formulario de contacto */
+.contact-form {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
-.philosophy__h1 {
-    font-family: "Sen";
-    font-weight: 600;
-    font-size: 55pt;
-    color: #f2f2f2;
-    margin: 0 100px 0px 100px;
-    transform:translateY(235px)
 
-}
-.philosophy__p {
-    font-family: "Sen";
-    font-weight: 400;
-    font-size: 14pt;
-    text-align: justify;
-    color: #f2f2f2;
-    max-width: 800px;
-    margin: 0 100px 0px 100px;
-    transform: translateY(240px);
-
-}
-.skillset {
-    height: 700px;
+/* Pie de página */
+.footer {
     display: flex;
-    flex-direction: row;
-    position: relative;
-    background-color: #3A393B;
+    justify-content: space-between;
 }
-.skillset__text {
-    font-family: "Sen";
-    max-width: 600px;
-    margin: 0 auto;
-    justify-content: left;
-}
-.skillset__text h3 {
-    font-size: 64px;
-    font-weight: 600;
-    color:#f2f2f2;
-}
-.skillset__text p {
-    font-size: 19px;
-    color:#f2f2f2;
-    text-align: justify;
-}
-
-@font-face {
-    font-family: Apple, "Sen";
-    src: url("/assets/SFPRODISPLAYREGULAR.OTF");
-
-}
-
