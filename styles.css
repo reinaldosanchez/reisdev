@@ -3,8 +3,8 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     /*border: red 1px solid;*/
 }
 body {
@@ -275,4 +275,3 @@ nav ul li a:hover {
     src: url("/assets/SFPRODISPLAYREGULAR.OTF");
 
 }
-
